@@ -1,5 +1,6 @@
 package boilerplate.projectboilerplate.service;
 
+import boilerplate.projectboilerplate.dto.CustomUserDetails;
 import boilerplate.projectboilerplate.entity.UserEntity;
 import boilerplate.projectboilerplate.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
