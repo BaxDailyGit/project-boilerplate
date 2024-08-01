@@ -1,5 +1,6 @@
 package boilerplate.projectboilerplate.Article.entity;
 
+import boilerplate.projectboilerplate.Article.dto.AddArticleResponse;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;
@@ -26,4 +27,9 @@ public class Article {
         this.content = content;
     }
 
+    // 생성자를 사용해 객체 생성
+    // Article 객체를 AddArticleResponse 객체로 변환
+    public AddArticleResponse toResponse() {
+        return new AddArticleResponse(id, title, content);
+    }
 }
