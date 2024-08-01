@@ -1,6 +1,6 @@
 package boilerplate.projectboilerplate.Article.controller;
 
-import boilerplate.projectboilerplate.Article.dto.AddArticleRequest;
+import boilerplate.projectboilerplate.Article.dto.ArticleRequest;
 import boilerplate.projectboilerplate.Article.entity.Article;
 import boilerplate.projectboilerplate.Article.repository.ArticleRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,7 +52,7 @@ public class ArticleControllerTest {
         String url = "/api/articles";
         String title = "title";
         String content = "contents";
-        AddArticleRequest request = new AddArticleRequest(title, content);
+        ArticleRequest request = new ArticleRequest(title, content);
 
         // 객체를 JSON으로 직렬화
         String requestBody = objectMapper.writeValueAsString(request);

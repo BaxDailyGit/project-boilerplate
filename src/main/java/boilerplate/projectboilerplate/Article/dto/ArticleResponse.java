@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class AddArticleResponse {
+public class ArticleResponse {
     private Long id;
     private String title;
     private String content;

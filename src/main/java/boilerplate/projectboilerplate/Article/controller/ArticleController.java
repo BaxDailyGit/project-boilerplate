@@ -1,7 +1,7 @@
 package boilerplate.projectboilerplate.Article.controller;
 
-import boilerplate.projectboilerplate.Article.dto.AddArticleRequest;
-import boilerplate.projectboilerplate.Article.dto.AddArticleResponse;
+import boilerplate.projectboilerplate.Article.dto.ArticleRequest;
+import boilerplate.projectboilerplate.Article.dto.ArticleResponse;
 import boilerplate.projectboilerplate.Article.entity.Article;
 import boilerplate.projectboilerplate.Article.service.ArticleService;
 import org.springframework.http.HttpStatus;
@@ -20,10 +20,9 @@ public class ArticleController {
 
     // HTTP요청이 'POST /api/articles' 경로일 때 해당 메소드로 매핑
     @PostMapping("/api/articles")
-    public ResponseEntity<AddArticleResponse> addArticle(@RequestBody AddArticleRequest request) { // RequestBody로 요청 본문 값 매핑
+    public ResponseEntity<ArticleResponse> addArticle(@RequestBody ArticleRequest request) { // RequestBody로 요청 본문 값 매핑
         Article article = articleService.saveArticle(request);
-        AddArticleResponse savedResponse = article.toResponse();
         return ResponseEntity.status(HttpStatus.CREATED)
-                .body(savedResponse);
+                .body(article.toResponse());
     }
 }

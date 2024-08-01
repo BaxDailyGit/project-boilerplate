@@ -1,8 +1,10 @@
 package boilerplate.projectboilerplate.Article.service;
-import boilerplate.projectboilerplate.Article.dto.AddArticleRequest;
+import boilerplate.projectboilerplate.Article.dto.ArticleRequest;
 import boilerplate.projectboilerplate.Article.entity.Article;
 import boilerplate.projectboilerplate.Article.repository.ArticleRepository;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class ArticleService {
@@ -13,7 +15,11 @@ public class ArticleService {
         this.articleRepository = articleRepository;
     }
 
-    public Article saveArticle(AddArticleRequest request) {
+    public Article saveArticle(ArticleRequest request) {
         return articleRepository.save(request.toEntity());
+    }
+
+    public List<Article> findAll() {
+        return articleRepository.findAll();
     }
 }
