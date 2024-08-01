@@ -18,6 +18,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 
 import java.util.List;
 
@@ -70,5 +71,24 @@ public class ArticleControllerTest {
         assertThat(articleList.size()).isEqualTo(1);
         assertThat(articleList.get(0).getTitle()).isEqualTo(title);
         assertThat(articleList.get(0).getContent()).isEqualTo(content);
+    }
+
+
+    @DisplayName("블로그 글 전체 조회 성공")
+    @Test
+    public void testFindAll() throws Exception {
+        // given
+        final String url = "/api/articles";
+        final String title = "제목";
+        final String content = "내용";
+        Article article = articleRepository.save(new Article(title, content));
+
+        // when
+        ResultActions result = mockMvc.perform(get(url));
+
+        // then : 정상적으로 요청이 되었는지 검증
+        result.andExpect(status().isOk())
+                .andExpect(jsonPath("$[0].title").value(article.getTitle()))
+                .andExpect(jsonPath("$[0].content").value(article.getContent()));
     }
 }
