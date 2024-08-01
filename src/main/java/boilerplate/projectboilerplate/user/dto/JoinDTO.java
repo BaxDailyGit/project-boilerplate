@@ -1,4 +1,4 @@
-package boilerplate.projectboilerplate.dto;
+package boilerplate.projectboilerplate.user.dto;
 
 import lombok.Getter;
 import lombok.Setter;

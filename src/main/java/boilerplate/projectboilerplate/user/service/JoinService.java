@@ -1,8 +1,8 @@
 package boilerplate.projectboilerplate.service;
 
-import boilerplate.projectboilerplate.dto.JoinDTO;
-import boilerplate.projectboilerplate.entity.UserEntity;
-import boilerplate.projectboilerplate.repository.UserRepository;
+import boilerplate.projectboilerplate.user.dto.JoinDTO;
+import boilerplate.projectboilerplate.user.entity.UserEntity;
+import boilerplate.projectboilerplate.user.repository.UserRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 

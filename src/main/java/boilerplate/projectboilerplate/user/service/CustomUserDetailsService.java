@@ -1,8 +1,8 @@
 package boilerplate.projectboilerplate.service;
 
-import boilerplate.projectboilerplate.dto.CustomUserDetails;
-import boilerplate.projectboilerplate.entity.UserEntity;
-import boilerplate.projectboilerplate.repository.UserRepository;
+import boilerplate.projectboilerplate.user.dto.CustomUserDetails;
+import boilerplate.projectboilerplate.user.entity.UserEntity;
+import boilerplate.projectboilerplate.user.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
