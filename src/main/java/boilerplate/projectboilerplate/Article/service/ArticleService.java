@@ -19,6 +19,7 @@ public class ArticleService {
         return articleRepository.save(request.toEntity());
     }
 
+    // 게시글 전체 조회
     public List<Article> findAll() {
         return articleRepository.findAll();
     }
