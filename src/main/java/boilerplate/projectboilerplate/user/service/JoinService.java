@@ -1,4 +1,4 @@
-package boilerplate.projectboilerplate.service;
+package boilerplate.projectboilerplate.user.service;
 
 import boilerplate.projectboilerplate.user.dto.JoinDTO;
 import boilerplate.projectboilerplate.user.entity.UserEntity;

@@ -1,7 +1,7 @@
-package boilerplate.projectboilerplate.controller;
+package boilerplate.projectboilerplate.user.controller;
 
-import boilerplate.projectboilerplate.dto.JoinDTO;
-import boilerplate.projectboilerplate.service.JoinService;
+import boilerplate.projectboilerplate.user.dto.JoinDTO;
+import boilerplate.projectboilerplate.user.service.JoinService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;

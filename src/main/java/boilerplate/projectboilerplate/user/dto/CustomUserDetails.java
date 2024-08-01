@@ -1,6 +1,6 @@
 package boilerplate.projectboilerplate.user.dto;
 
-import boilerplate.projectboilerplate.entity.UserEntity;
+import boilerplate.projectboilerplate.user.entity.UserEntity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

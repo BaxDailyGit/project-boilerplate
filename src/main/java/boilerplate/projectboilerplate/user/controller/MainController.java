@@ -1,4 +1,4 @@
-package boilerplate.projectboilerplate.controller;
+package boilerplate.projectboilerplate.user.controller;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;

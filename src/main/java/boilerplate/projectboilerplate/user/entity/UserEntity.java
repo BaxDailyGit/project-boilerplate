@@ -1,4 +1,4 @@
-package boilerplate.projectboilerplate.entity;
+package boilerplate.projectboilerplate.user.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

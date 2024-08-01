@@ -1,7 +1,7 @@
-package boilerplate.projectboilerplate.jwt;
+package boilerplate.projectboilerplate.common.jwt;
 
-import boilerplate.projectboilerplate.dto.CustomUserDetails;
-import boilerplate.projectboilerplate.entity.UserEntity;
+import boilerplate.projectboilerplate.user.dto.CustomUserDetails;
+import boilerplate.projectboilerplate.user.entity.UserEntity;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

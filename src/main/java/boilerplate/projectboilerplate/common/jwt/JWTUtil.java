@@ -1,4 +1,4 @@
-package boilerplate.projectboilerplate.jwt;
+package boilerplate.projectboilerplate.common.jwt;
 
 import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Value;

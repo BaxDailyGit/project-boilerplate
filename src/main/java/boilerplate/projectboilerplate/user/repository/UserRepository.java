@@ -1,4 +1,4 @@
-package boilerplate.projectboilerplate.repository;
+package boilerplate.projectboilerplate.user.repository;
 
 import boilerplate.projectboilerplate.user.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

@@ -1,8 +1,8 @@
-package boilerplate.projectboilerplate.config;
+package boilerplate.projectboilerplate.common.config;
 
-import boilerplate.projectboilerplate.jwt.JWTUtil;
-import boilerplate.projectboilerplate.jwt.LoginFilter;
-import boilerplate.projectboilerplate.jwt.JWTFilter;
+import boilerplate.projectboilerplate.common.jwt.JWTFilter;
+import boilerplate.projectboilerplate.common.jwt.JWTUtil;
+import boilerplate.projectboilerplate.common.jwt.LoginFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
